@@ -27,6 +27,12 @@ li {
   margin-bottom: 10px;
   background-color: white;
 }
+a.menu-button__cps{
+  display: block;
+  width: 96px; 
+  height: 50px;
+  padding-bottom: 5px;
+}
 
 .header-menu {
   justify-content: center;
