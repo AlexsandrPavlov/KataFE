@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>kata</title>
+    <title>CPS сервис</title>
 </head>
 <body>
 	<header class="header">
@@ -21,9 +21,9 @@
 						<img class="menu-divider1" src="icons/divider.svg">							
 				   </li>												    
 					<li class="menu__item">
-						<button class = "menu-button__cps"  type="button">
-							<img src="icons/Group.svg"  alt="Логотип CPS" width="96.55px" height="50.81px">
-						</button>
+						<a href="#" class = "menu-button__cps">
+							<img src="icons/Group.svg"  alt="Логотип CPS" >
+						</a>
 					</li class="menu__item">
 				</div>
 				<div class="list-container-no-mobile">
@@ -71,7 +71,7 @@
 				 </button>
 				 <button class="menu-button menu-button__status" type="button">
 					  <span class="menu-button__text">Статус ремонта</span>
-					  <img src="icons/checkstatus.svg"" alt="Статус ремонта">
+					  <img src="icons/checkstatus.svg" alt="Статус ремонта">
 				 </button>
 	  </div>
 			<nav class="main-menu">
@@ -96,6 +96,85 @@
                     </li>
 				</ul>
 	  		</nav>
+			  <aside class="dropdown-container">
+				<nav class="dropdown-menu">
+					<div class="dropdown_list-container">
+						<ul class="dropdown__list">
+							<li class="dropdown__item">
+								<button class="menu-button menu-button__close">
+									<img src="icons/close.svg"  alt="Закрыть" >
+								</button>
+							</li>
+							<li class="menu__item">
+								<a href="#" class = "menu-button__cps">
+									<img src="icons/Group.svg"  alt="Логотип CPS" >
+								</a>
+							</li>
+							<li class="menu__item">
+								<button class="menu-button menu-button__search">
+									<img src="icons/search.svg" alt="Поиск">
+								</button>
+							</li>
+						</ul>
+					</div>
+				</nav>
+					<nav class="dropdown-menu-container">
+						<ul class="dropdown-menu__list">
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--active">
+									<a class = "dropdown-menu__list-item__link " href="">Ремонт техники</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Услуги и сервисы</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Корпоративным клиентам</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Продавцам техники</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item:--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Партнерам</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Производителям</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Наши сервисные центры</a>
+							</li>
+							<li class="dropdown-menu__list-item dropdown-menu__list-item:--disabled">
+									<a class = "dropdown-menu__list-item__link" href="">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+						<nav class="dropdown-footer-container">
+							<ul class="dropdown-footer-menu-list">
+								<li class="fdropdown-ooter-item">
+									<button class="dropdown-footer-button dropdown-footer-button__call">
+											<img src="icons/call.svg" alt="Перезвоните мне">
+									</button>
+								</li>
+								<li class="dropdown-footer-item">
+									<button class="dropdown-footer-button dropdown-footer-button__chat">
+										<img src="icons/chat.svg" alt="Написать" >
+									</button>
+								</li>
+								<li class="dropdown-footer-item">
+										<button class="dropdown-footer-button dropdown-footer-button__profile">
+											<img src="icons/profile.svg" alt="Профиль" >
+								</button>
+								</li>
+							</ul>   
+								<div class="dropdown-contact-container">
+									<a class="contact__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+									<a class="contact__tel" href="tel:+78008908900">8 800 890 8900</a>
+								</div>
+								<div class="dropdown-language-container">
+									<a class="language__link--active" href="" >RU</a>
+									<a class="language__link--disabled" href="">EN</a>
+									<a class="language__link--disabled" href="">CH</a>
+								</div>
+						</nav>
+				 </aside>
 			  <section class="section">
 				<div class="section-info-container">
 					<p class="section-info"> 
