@@ -184,7 +184,7 @@ li {
 .list-container-no-mobile li:nth-child(3) {
   display: none;
 }
-.dropdown_container {
+.dropdown-container {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -317,9 +317,6 @@ li {
     display: inline-block;
     padding: 5px 10px 0px 10px;
   }
-  /* .dropdaown_container{
-    display: none;
-  } */
   .menu__list {
     justify-content: space-between;
   }
@@ -356,7 +353,7 @@ li {
   }
 }
 @media (min-width: 1120px) {
-  .dropdown_container {
+  .dropdown-container {
     display: none;
   }
   body {
