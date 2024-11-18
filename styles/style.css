@@ -249,7 +249,7 @@ li {
   margin-bottom: 6em;
 }
 .dropdown-menu__list-item--active {
-  content: url(/icons/highlight.svg);
+  content: url(icons/highlight.svg);
   position: absolute;
   top: 130px;
 }
@@ -381,13 +381,13 @@ li {
   }
   .menu-button__repair {
     margin-right: 170px;
-    background-image: url(/icons/repair.svg);
+    background-image: url(icons/repair.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
   }
   .menu-button__status {
-    background-image: url(/icons/checkstatus.svg);
+    background-image: url(icons/checkstatus.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
