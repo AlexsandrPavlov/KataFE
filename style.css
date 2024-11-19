@@ -249,7 +249,7 @@ li {
   margin-bottom: 6em;
 }
 .dropdown-menu__list-item--active {
-  content: url(/icons/highlight.svg);
+  content: url(icons/highlight.svg);
   position: absolute;
   top: 130px;
 }
@@ -353,16 +353,15 @@ li {
   }
 }
 @media (min-width: 1120px) {
-  .dropdown-container {
-    display: none;
-  }
   body {
     max-width: 1120px;
   }
   .header {
     display: none;
   }
-
+  .dropdown-container{
+    display: none;
+  }
   .main {
     padding: 42px 44px 49px 30px;
   }
@@ -381,13 +380,13 @@ li {
   }
   .menu-button__repair {
     margin-right: 170px;
-    background-image: url(/icons/repair.svg);
+    background-image: url(icons/repair.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
   }
   .menu-button__status {
-    background-image: url(/icons/checkstatus.svg);
+    background-image: url(icons/checkstatus.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
@@ -484,33 +483,33 @@ li {
 /* Fonts */
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Bold.eot");
-  src: local("/fonts/TT Lakes Bold"), local("/fonts/TTLakes-Bold"),
-    url("/fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/TTLakes-Bold.woff") format("woff"),
-    url("/fonts/TTLakes-Bold.ttf") format("truetype");
+  src: url("fonts/TTLakes-Bold.eot");
+  src: local("fonts/TT Lakes Bold"), local("ffonts/TTLakes-Bold"),
+    url("fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Bold.woff") format("woff"),
+    url("ffonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Medium.eot");
-  src: local("/fonts/TT Lakes Medium"), local("/fonts/TTLakes-Medium"),
-    url("/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/TTLakes-Medium.woff") format("woff"),
-    url("/fonts/TTLakes-Medium.ttf") format("truetype");
+  src: url("fonts/TTLakes-Medium.eot");
+  src: local("fonts/TT Lakes Medium"), local("fonts/TTLakes-Medium"),
+    url("ffonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Regular.eot");
-  src: local("/fonts/TT Lakes Regular"), local("/fonts/TTLakes-Regular"),
-    url("/fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/TTLakes-Regular.woff") format("woff"),
-    url("/fonts/TTLakes-Regular.ttf") format("truetype");
+  src: url("fonts/TTLakes-Regular.eot");
+  src: local("fonts/TT Lakes Regular"), local("fonts/TTLakes-Regular"),
+    url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/TTLakes-Regular.woff") format("woff"),
+    url("fonts/TTLakes-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
