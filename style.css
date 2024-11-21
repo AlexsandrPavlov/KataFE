@@ -13,15 +13,21 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+button{
+  transition: all 0.7s;
+}
 h1,
 p,
 ul,
-li {
+li,
+a {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-decoration: none;
 }
 /* mobile-first */
+/* хедер */
 .header {
   padding: 18px 16px;
   border-bottom: 1px solid #41f6d7;
@@ -93,7 +99,7 @@ li {
   display: flex;
   justify-content: space-between;
 }
-
+/* меню в мейн */
 .main-menu {
   margin-left: 16px;
   margin-bottom: 24px;
@@ -108,6 +114,7 @@ li {
   padding: 8px 16px;
   border: 2px solid transparent;
   text-decoration: none;
+  transition: all 0.4s;
 }
 
 .menu-link:hover {
@@ -126,6 +133,7 @@ li {
   margin: 10px 0px 10px 16px;
   font-size: 28px;
   letter-spacing: -0.6px;
+  
 }
 
 .main-title::before {
@@ -140,7 +148,7 @@ li {
 .main {
   flex-grow: 1;
 }
-
+/* контент */
 .section {
   margin-left: 16px;
   display: flex;
@@ -184,17 +192,17 @@ li {
 .list-container-no-mobile li:nth-child(3) {
   display: none;
 }
+/*  бургер */
 .dropdown-container {
   position: absolute;
   top: 0px;
-  left: 0px;
   margin: 0px;
   padding: 0px;
   background-color: white;
-  min-height: 100%;
+  min-height: 676px;
   max-width: 320px;
   box-shadow: 1px 0px 70px rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: 10;
 }
 .dropdown-menu {
   height: 10%;
@@ -241,22 +249,22 @@ li {
   cursor: pointer;
   background-color: #f4bccd;
 }
-/* основное меню */
+/* меню бургера */
 .dropdown-menu-container {
   height: 60%;
 }
 .dropdown-menu__list {
   margin-bottom: 6em;
 }
-.dropdown-menu__list-item--active {
-  content: url(icons/highlight.svg);
-  position: absolute;
-  top: 130px;
+.dropdown-menu__list-item__link--hover:hover{
+  color: #ff004c;
+  cursor: pointer;
+  transform: translateY(2px);
+  transition: all 0.2s;
 }
-.dropdown-menu__list-item__link {
+.dropdown-menu__list-item__link--disabled {
   display: block;
   position: relative;
-  text-decoration: none;
   font-size: 16px;
   color: #1b1c21;
   letter-spacing: -0.2px;
@@ -264,6 +272,23 @@ li {
   margin-left: 24px;
   margin-bottom: 20px;
 }
+.dropdown-menu__list-item__link--active {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #1b1c21;
+  letter-spacing: -0.2px;
+  height: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+.dropdown-menu__list-item__link--active::before {
+  content: url(icons/highlight.svg);
+  position: absolute;
+  top: -6px;
+  left: -24px;
+}
+/* футер бургера */
 .dropdown-footer-container {
   position: static;
   height: 30%;
@@ -278,7 +303,6 @@ li {
 .dropdown-footer-item {
   margin-left: 12px;
 }
-/* контакты */
 .dropdown-contact-container {
   display: flex;
   flex-direction: column;
@@ -294,7 +318,11 @@ li {
   text-decoration: none;
   color: #1b1c21;
 }
-/* язык */
+.dropdown-contact-container a:hover{
+  color: #ff004c;
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
 .language__link--active {
   color: #7e7e82;
   text-decoration: none;
@@ -303,10 +331,14 @@ li {
   text-decoration: none;
   color: #1b1c21;
 }
+.language__link:hover{
+  color: #7e7e82;
+}
 .dropdown-language-container {
   margin-top: 1.5em;
   margin-left: 24px;
 }
+/* стили для планшета */
 @media (min-width: 768px) {
   .list-container-no-mobile li:nth-child(1),
   .list-container-no-mobile li:nth-child(2),
@@ -352,6 +384,7 @@ li {
     width: 50%;
   }
 }
+/* стили пк */
 @media (min-width: 1120px) {
   body {
     max-width: 1120px;
