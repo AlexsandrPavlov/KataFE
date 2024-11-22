@@ -45,22 +45,14 @@ body {
 	color: #1b1c21;
 	background-color: #f8f8f8;
 }
-html {
-	scrollbar-gutter: stable;
-}
 .page-container {
-  display: flex;
+	max-width: 1440px;
 	margin: 0 auto;
+	position: relative;
 	overflow: hidden;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-.contenet_container{
   display: flex;
+  flex-direction: column;
 }
-
-
 button{
   transition: all 0.7s;
 }
@@ -142,8 +134,10 @@ button{
   justify-content: space-between;
 }
 .main-menu {
+  display: block;
   margin-left: 16px;
   margin-bottom: 24px;
+  position: relative;
 }
 .menu-link {
   color: #7e7e82;
@@ -180,16 +174,15 @@ button{
   left: -1px;
   background-color: #41f6d7;
 }
-.main {
+main {
   flex-grow: 1;
 }
 /* контент */
-.section {
-  margin-left: 16px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  background-color: #f8f8f8;
+.about-container {
+display: block;
+}
+.section-info-container{
+  padding: 0 10px;
 }
 .section-info {
   overflow-y: hidden;
@@ -216,12 +209,12 @@ button{
 }
 
 .section-cps {
-	max-width: 690px;
-	margin: 0 auto;
-	display: block;
+  max-width: 526px;
   height: 100%;
+	margin: 0;
+	display: block;
 	position: relative;
-	border-radius: 10px;
+	border-radius: 20px;
 	overflow: hidden;
 }
 .section-cps-image{
@@ -237,7 +230,7 @@ button{
 /*  бургер */
 .dropdown-container {
   flex-direction: column;
-  display: flex;
+  display: none;
   position: absolute;
   top: 0px;
   margin: 0px;
@@ -385,6 +378,13 @@ button{
 }
 /* стили для планшета */
 @media (min-width: 768px) {
+  main{
+    width: 768px;
+  }
+  .contenet_container{
+    display: flex;
+   justify-content: center;
+  }
   .list-container-no-mobile li:nth-child(1),
   .list-container-no-mobile li:nth-child(2),
   .list-container-no-mobile li:nth-child(3) {
@@ -405,18 +405,17 @@ button{
     margin-left: 20px;
     border-radius: 1px;
   }
-  .section {
+  .about-container {
     display: flex;
-    flex-direction: row;
-    margin-left: 24px;
   }
 
   .section-cps {
     min-height: 176px;
     padding-bottom: 26px;
-    margin-right: 40px;
+    margin-right: 0px;
     border-radius: 6px;
     width: 50%;
+    height: 50%;
   }
   .section-info {
     height: 160px;
@@ -431,6 +430,13 @@ button{
 }
 /* стили пк */
 @media (min-width: 1440px) {
+  .contenet_container{
+    display: flex;
+  }
+  main {
+    padding: 42px 44px 49px 30px;
+    width: 1120px;
+  }
   .header {
     display: none;
   }
@@ -445,15 +451,12 @@ button{
   .dropdown-menu-container{
     padding: 40px 0px 40px 0px;
   }
-  .main {
-    padding: 42px 44px 49px 30px;
-  }
 
   .main-title {
     display: none;
   }
 
-  .main .menu-button {
+  main .menu-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,11 +479,9 @@ button{
   .main-menu {
     margin-left: 0;
   }
-
-  .section {
-    margin-left: 0;
+  .menu-list{
+    flex-wrap: wrap ;
   }
-
   .main-desktop-container {
     display: flex;
     justify-content: flex-start;
