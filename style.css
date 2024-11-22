@@ -52,6 +52,7 @@ body {
 	overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 button{
   transition: all 0.7s;
@@ -230,8 +231,8 @@ display: block;
 /*  бургер */
 .dropdown-container {
   flex-direction: column;
-  display: none;
-  position: absolute;
+  position: fixed;
+  display: flex;
   top: 0px;
   margin: 0px;
   padding: 0px;
@@ -287,11 +288,10 @@ display: block;
 }
 /* меню бургера */
 .dropdown-menu-container {
-  height: 60%;
   padding: 20px 0px 20px 0px;
 }
 .dropdown-menu__list {
-  margin-bottom: 6em;
+  margin-bottom: 1em;
 }
 .dropdown-menu__list-item__link--hover:hover{
   color: #ff004c;
@@ -380,10 +380,10 @@ display: block;
 @media (min-width: 768px) {
   main{
     width: 768px;
+    align-items: center;
   }
   .contenet_container{
     display: flex;
-   justify-content: center;
   }
   .list-container-no-mobile li:nth-child(1),
   .list-container-no-mobile li:nth-child(2),
@@ -449,8 +449,15 @@ display: block;
     padding: 28px 16px 40px 16px;
   }
   .dropdown-menu-container{
+    margin-bottom: 40px;
     padding: 40px 0px 40px 0px;
   }
+.dropdown-language-container{
+  margin-top: 40px; 
+}
+.menu-button__close{
+  display: none;
+}
 
   .main-title {
     display: none;
