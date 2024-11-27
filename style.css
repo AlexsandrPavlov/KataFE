@@ -204,7 +204,10 @@ padding-bottom: 5px;
 	color: #7e7e82;
 	font-size: 18px;
 	line-height: 24px;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
   border-top: 1px solid #d9fff5 ;
 }
@@ -514,6 +517,42 @@ padding-bottom: 5px;
 	resize: none;
 }
 
+.textarea-form::-webkit-input-placeholder, .input-form::-webkit-input-placeholder {
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.textarea-form::-moz-placeholder, .input-form::-moz-placeholder {
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.textarea-form:-ms-input-placeholder, .input-form:-ms-input-placeholder {
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.textarea-form::-ms-input-placeholder, .input-form::-ms-input-placeholder {
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
 .textarea-form::placeholder,
 .input-form::placeholder {
 	font-family: TT Lakes;
@@ -576,7 +615,10 @@ padding-bottom: 5px;
 	font-size: 14px;
 	line-height: 20px;
 	letter-spacing: 0.2px;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
   margin-bottom: 16px;
 }
 
@@ -616,7 +658,10 @@ padding-bottom: 5px;
 .footer-company-info {
 	display: flex;
 	flex-direction: column;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 .footer-company-info__year,
 .footer-company-info__text,
@@ -642,7 +687,10 @@ padding-bottom: 5px;
 .footer__privacy-policy-text {
 	padding-bottom: 19px;
 	text-align: center;
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 }
 .footer__company-text--mg,
 .footer__privacy-policy--mg {
