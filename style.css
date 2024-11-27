@@ -61,7 +61,6 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
-
 /* конец основных стилей */
 /* хедер */
 .header {
@@ -102,6 +101,7 @@ body {
   border: none;
   cursor: pointer;
   background-color: #ff004c;
+  transform: scale(1.04);
 }
 .menu-button:active {
   height: 40px;
@@ -160,6 +160,7 @@ body {
 .menu-link:hover {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  transform: scale(1.04);
 }
 .menu-link__item-active{
   border: 2px solid #b8ffec;
@@ -253,6 +254,26 @@ padding-bottom: 5px;
 .list-container-no-mobile li:nth-child(3) {
   display: none;
 }
+.order-button,
+.submit-form-button {
+	width: 119px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	color: #ffffff;
+	background-color: #ff3e79;
+	letter-spacing: -0.15px;
+	border-radius: 16px;
+	transition: all 0.4s;
+}
+.order-button:hover,
+.submit-form-button:hover {
+	transform: scale(0.98);
+  background-color: #ff004c;
+
+}
 
 /*  бургер */
 .dropdown-container {
@@ -303,6 +324,7 @@ padding-bottom: 5px;
   border: none;
   cursor: pointer;
   background-color: #ff004c;
+  transform: scale(1.04);
 }
 .dropdown-footer-button:active {
   height: 40px;
@@ -401,6 +423,148 @@ padding-bottom: 5px;
   margin-left: 24px;
 }
 /* конец бургера */
+/* модалки */
+.modal-call,
+.modal-message {
+	position: absolute;
+	top: 0;
+  right: 0;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 360px;
+	min-height: 676px;
+	background-color: #ffffff;
+  padding: 24px 16px 75px 16px;
+}
+
+.modal-call__btn-close,
+.modal-message__btn-close {
+	width: 40px;
+	height: 40px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: #ff3e79;
+}
+
+.modal-call__btn-close:hover,
+.modal-message__btn-close:hover {
+	cursor: pointer;
+	transform: scale(1.04);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: #ff004c;
+}
+.modal-call__btn-close:active,
+.modal-message__btn-close:active {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: #f4bccd;
+}
+.visually-hidden{
+  visibility: hidden;
+}
+.modal-title {
+	margin-left: 25px;
+	margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+.line {
+	border-radius: 0 13px 13px 0;
+	width: 4px;
+	height: 40px;
+	background-color: #41f6d7;
+  margin-left: -42px;
+  margin-right: 10px;
+}
+
+.input-form {
+	width: 100%;
+	padding: 12px 16px;
+	border: 2px solid #eaeaea;
+	border-radius: 8px;
+	outline: none;
+}
+
+.input-form:focus,
+.textarea-form:focus {
+	border: 2px solid rgb(128, 0, 0);
+}
+.title__text{
+  font-size: 24px;
+  letter-spacing: -0.6px;
+  font-weight: 600;
+}
+
+.textarea-form {
+	width: 100%;
+	resize: none;
+}
+
+.textarea-form::placeholder,
+.input-form::placeholder {
+	font-family: TT Lakes;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.modal-privacy-policy {
+	font-size: 14px;
+  margin-bottom: 19px;
+}
+
+.modal-privacy-policy-link {
+	transition: all 0.4s;
+	color: #ff3e79;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.modal-privacy-policy-link:hover {
+	color: #000000;
+}
+
+.modal-call,
+.modal-message {
+	border-left: 1px solid #d9fff5;
+	box-shadow: -8px 7px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.textarea-form {
+	outline: none;
+	border: 2px solid #eaeaea;
+	border-radius: 8px;
+	height: 118px;
+	padding: 12px 16px;
+}
+
+.textarea-form {
+	margin-bottom: 16px;
+}
+
+.input-form {
+	margin-bottom: 16px;
+}
+.sumbit-form-btn__wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+/* конец модалок */
 /* политика */
 .conditions {
 	border-bottom: 1px solid #d9fff5;
@@ -550,7 +714,12 @@ padding-bottom: 5px;
     padding: 20px 0px 20px 0px;
   }
   /* конец бургера */
-
+  /* модалки планшет */
+  .modal-call,
+	.modal-message {
+		min-width: 320px;
+	}
+  /* - */
   /* политика планшеты */
   .conditions-link {
 		max-width: 316px;
@@ -651,6 +820,23 @@ padding-bottom: 5px;
     left: -20px;
   }
   /* бургер пк конец */
+  /* модалки пк */
+  .modal-call__btn-close,
+	.modal-message__btn-close {
+		margin-top: 16px;
+		margin-bottom: 0px;
+		margin-left: -70px;
+	}
+
+	.modal-title {
+		margin-top: -38px;
+	}
+  .modal-call,
+	.modal-message {
+		max-width: 420px;
+	}
+
+  /* - */
 
   .main-title {
     display: none;
