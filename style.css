@@ -437,6 +437,7 @@ padding-bottom: 5px;
 	min-height: 676px;
 	background-color: #ffffff;
   padding: 24px 16px 75px 16px;
+  height: auto;
 }
 
 .modal-call__btn-close,
@@ -718,6 +719,7 @@ padding-bottom: 5px;
   .modal-call,
 	.modal-message {
 		min-width: 320px;
+    height: 100%;
 	}
   /* - */
   /* политика планшеты */
@@ -821,6 +823,10 @@ padding-bottom: 5px;
   }
   /* бургер пк конец */
   /* модалки пк */
+  .modal-call,
+  .modal-message {
+    height: 100%;
+  }
   .modal-call__btn-close,
 	.modal-message__btn-close {
 		margin-top: 16px;
