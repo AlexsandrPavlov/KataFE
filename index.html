@@ -172,13 +172,85 @@
 
 			 </aside> 
 
-			 <div class="reserve">
+			 <!-- <div class="modal-call">
 
-			 </div>
+				<button type="button" class='modal-call__button-close'>
+					<img src="icons/close.svg" alt="Закрыть">
+				</button>
 
-			 <div class="reserve">
+				<div class='modal-title'>
+					<span class='line'></span>
+					<h2 class='title__text'>Заказать звонок</h2>
+				</div>
 
-			 </div>
+				<form action="/">
+
+					<label for="input-phone">
+						<span class="visually-hidden">Поле ввода номера телефона</span>
+						<input type="tel" id='input-phone' placeholder='Телефон' autocomplete="on" class='input-form'
+						required>
+					</label>
+
+					<p class="modal-privacy-policy">
+						Нажимая “отправить”, вы даете согласие на <a class='modal-privacy-policy-link' href='#0'>обработку
+						персональных данных</a> и соглашаетесь с
+						нашей 
+						<a class='modal-privacy-policy-link' href='#0'>политикой конфиденциальности</a>
+					</p>
+
+					<button class="submit-form-button-wrap">
+						<span class='submit-form-button'>Отправить ></span>
+					</button>
+
+				</form>
+
+			</div>  -->
+
+			 <!-- <div class="modal-message">
+
+				<button type="button" class='modal-message__btn-close modal-message__btn-close--mg'>
+					<img src="icons/close.svg" alt="Закрыть">
+				</button>
+
+				<div class='modal-title'>
+					<span class='line'></span>
+					<h2 class='title__text'>Обратная связь</h2>
+				</div>
+
+				<form action="/">
+
+					<label for="field-name">
+						<span class="visually-hidden">Поле имени</span>
+						<input type='text' id='field-name' placeholder='Имя' autocomplete="on" class='input-form '
+						required>
+					</label>
+
+					<label for="field-phone">
+						<span class="visually-hidden">Поле ввода номера телефона</span>
+						<input type='tel' id='field-phone' placeholder='Телефон' autocomplete="on" class='input-form '
+						required>
+					</label>
+
+					<label for="field-email">
+						<span class="visually-hidden">Поле ввода адреса электронной почты</span>
+						<input type='email' id='field-email' placeholder='Электронная почта' autocomplete="on"
+						class='input-form' required>
+					</label>
+
+					<textarea class='textarea-form' placeholder='Сообщение'></textarea>
+						<p class="modal-privacy-policy">
+							Нажимая “отправить”, вы даете согласие на <a class='modal-privacy-policy-link' href='#0'>обработку
+							персональных данных</a> и соглашаетесь с
+							нашей 
+							<a class='modal-privacy-policy-link' href='#0'>политикой конфиденциальности</a>
+						</p>
+
+						<button class="submit-form-button-wrap">
+							<span class='submit-form-button'>Отправить ></span>
+						</button>
+
+				</form>
+			 </div> -->
 
 			<main>
 
@@ -228,14 +300,15 @@
 
 					<div class="section-info-container">
 
-						<p class="section-info"> 
-							Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    		отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    		<br><br>
-                    		Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                    		количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    		очередь, советуют нас родным и близким.
-						</p>
+						
+							<p class="section-info"> 
+								Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                    			отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    			<br><br>
+                    			Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                    			количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    			очередь, советуют нас родным и близким.
+							</p>
 
 						<button class="section-button section-button__icon" type="button" >
 							<img src="icons/expand.svg" alt="" > <span class="section-next">Читать далее</span>
@@ -249,34 +322,48 @@
 					</div>
 
 			  	</div>
-				<div class="reserve">
+				<div class="services-brand-container">
+					<h2 class="subtitle services_brand_title">Ремонт техники различных брендов</h2>
+					
 
 				</div>
 
-				<div class="reserve">
+				<div class="repair-container">
+					<h2 class="subtitle repair_title"> ремонт различных видов техники</h2>
 
 				</div>
 
-				<div class="reserve">
+				<div class="price-container">
+					<h2 class="subtitle price_title"> цены на услуги</h2>
 
 				</div>
 
-				<div class="reserve">
+				<div class='conditions'>
+
+					<p class='conditions-text'>
+						Все цены указаны с учетом НДС. Стоимость ремонта указана наединичную услугу. Для
+						получения коммерческогопредложения на постоянное обслуживание, оставьте заявку.
+					</p>
+
+					<a href='' class='conditions-link'>
+						Получить коммерческое предложение
+						<span class='conditions-link__arrow-image'></span>
+					</a>
 
 				</div>
 
-				<!-- <footer class="footer-container">
+				 <footer class="footer-container">
 					<div class='footer-company-info'>
 						<p class='footer-company-info__year'>© 2019 CPS</p>
-						<p class='footer-company-info__text footer-company-info__text--mg'>
+						<p class='footer-company-info__text '>
 							Разработано командой Apesong
 						</p>
 					</div>
-					<a href='#0' class='footer__privacy-policy footer__privacy-policy--mg'>Политика конфиденциальности</a>
-					<p class='footer__privacy-policy-text footer__privacy-policy-text--mg'>
+					<a href='#0' class='footer__privacy-policy'>Политика конфиденциальности</a>
+					<p class='footer__privacy-policy-text'>
 						Информация, размещенная на данной странице, не является публичной офертой
 					</p>
-				</footer> -->
+				</footer> 
 
 			</main>
 
