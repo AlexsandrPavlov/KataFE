@@ -135,7 +135,6 @@ body {
 
 .main-menu {
   display: block;
-  margin-left: 16px;
   margin-bottom: 24px;
   position: relative;
 }
@@ -182,7 +181,9 @@ body {
 }
 .about-container {
 display: block;
-padding-bottom: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
 }
 .subtitle{
   width: 100%;
@@ -664,11 +665,15 @@ padding-bottom: 5px;
 
 @media (min-width: 768px) {
   main{
-   width: 768px;
+   width: 100%;
+   height: 100%;
+   
   }
   .contenet_container{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   .list-container-no-mobile li:nth-child(1),
   .list-container-no-mobile li:nth-child(2),
