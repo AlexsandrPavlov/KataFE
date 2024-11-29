@@ -270,16 +270,16 @@ margin-right: 5px;
   background-color: white;
   min-height: 676px;
   max-width: 320px;
-  z-index: 10;
+  z-index: 100;
   visibility: hidden;
-  height: 100vh;
+  height: 678px;
   left:0;
-  transform: translate(-500px);
+  transform: translateX(-500px);
   box-shadow: 1px 0px 70px rgba(0, 0, 0, 0.3);
   transition: all 0.6s;
 }
 .dropdown-container__active{
-  transform: translate(0);
+  transform: none;
   visibility: visible;
 }
 .dropdown-menu {
@@ -717,15 +717,17 @@ margin-right: 5px;
   .section-info-container {
     width: 50%;
   }
-  .dropdown-footer-container {
-    position: absolute;
-    bottom: 10px;
-    padding: 20px 0px 20px 0px;
+  .dropdown-container{
+    height: 100vh;
   }
   .modal-call__active,
 	.modal-message__active {
     height: 100vh;
 	}
+  .modal-call,
+  .modal-message{
+    height: 100vh;
+  }
   .conditions-link {
 		max-width: 316px;
     font-size: 16px;
@@ -767,13 +769,13 @@ margin-right: 5px;
 		width: 213px;
 	}
 }
-  @media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .contenet_container{
     height: 100%;
   }
   main {
     padding: 42px 44px 5px 30px;
-    width: 1440px;
+    min-width: 1120px;
   }
   .header {
     display: none;
@@ -782,9 +784,14 @@ margin-right: 5px;
     display: flex;
     position: relative;
     box-shadow: none;
+    top: 0px;
+    left: 500px;
     height: auto;
-    transform: translate(0);
     visibility: visible;
+  }
+  .dropdown-container__active{
+    left: 0px
+
   }
   .dropdown_list-container{
     padding: 28px 16px 40px 16px;
@@ -804,6 +811,10 @@ margin-right: 5px;
     position: absolute;
     top: -6px;
     left: -20px;
+  }
+  .dropdown-footer-container{
+    position: absolute;
+    bottom: 10px;
   }
   .modal-call__btn-close,
 	.modal-message__btn-close {
@@ -825,6 +836,10 @@ margin-right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .menu-button__repair img,
+  .menu-button__status img{
+    display: none;
   }
   .menu-button__repair {
     margin-right: 150px;
