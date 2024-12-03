@@ -249,7 +249,7 @@ body {
 .control-icon {
 	width: 7.41px;
 	height: 10.29px;
-	background-image: url('../icons/arrow.svg');
+	background-image: url('icons/arrow.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
