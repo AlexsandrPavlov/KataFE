@@ -202,13 +202,11 @@ body {
   max-height: 83px;
   overflow: hidden;
   margin-bottom: 16px;
-  -webkit-transition: all .75s;
   transition: all .75s
 }
 
 .about-text-section__hidden {
   opacity: .3;
-  -webkit-transition: inherit;
   transition: inherit
 }
 
@@ -333,14 +331,8 @@ margin-right: 5px;
 .btn-order {
   width: 119px;
   height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 600;
   color: #fff;
@@ -349,7 +341,6 @@ margin-right: 5px;
   border-radius: 16px;
   -webkit-filter: drop-shadow(1px 1px 1.5px #000000);
   filter: drop-shadow(1px 1px 1.5px #000000);
-  -webkit-transition: all .4s;
   transition: all .4s
 }
 .btn-order--position {
@@ -360,14 +351,11 @@ margin-right: 5px;
 .btn-order:hover {
   cursor: pointer;
   background-color: #fc044f;
-  -webkit-transition: all .2s;
   transition: all .2s;
-  -webkit-transform: scale(1.01);
   transform: scale(1.01)
 }
 
 .btn-order:active {
-  -webkit-transform: scale(0.99);
   transform: scale(0.99)
 }
 .order-button,
@@ -885,30 +873,17 @@ margin-right: 5px;
 }
 
 .repair-card-desktop-container {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column
 }
 
 .repair-card-desktop-wrap {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   max-height: 160px;
   overflow: hidden;
-  -webkit-transition: all .75s;
   transition: all .75s
 }
 
@@ -940,12 +915,7 @@ margin-right: 5px;
   margin-bottom: 16px;
 }
 .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative
 }
@@ -984,15 +954,8 @@ margin-right: 5px;
 }
 
 .price-slider__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   position: relative
 }
@@ -1190,19 +1153,11 @@ margin-right: 5px;
   }
   .brand-card-desktop-wrap {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     max-height: 160px;
     overflow: hidden;
-    -webkit-transition: all .75s;
     transition: all .75s
   }
   .brand-card-wrap--active {
@@ -1273,13 +1228,8 @@ margin-right: 5px;
 }
 
 .repair-card-desktop-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center
 }
 
@@ -1331,11 +1281,7 @@ margin-right: 5px;
 }
 
 .price-desktop-list__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #eaeaea
 }
