@@ -812,12 +812,129 @@ margin-right: 5px;
 	background-position: center center;
 	transition: all 0.4s;
 }
-
 .brand-slider__link:hover {
 	transform: scale(1.04);
 }
 .brand-card-desktop-container {
 	display: none;
+}
+.repair_title{
+  margin-bottom: 16px;
+}
+.repair {
+  border-bottom: 1px solid #d9fff5;
+  padding-bottom: 16px;
+  position: relative
+  
+}
+.repair-container{
+  margin-bottom: 16px;
+}
+
+.repair-slider .swiper-pagination {
+  bottom: 0 !important
+}
+
+.repair-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #b5b6bc
+}
+
+.repair-slider {
+  height: 188px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 16px
+}
+
+.repair-slider__slide {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 16px;
+  height: 160px;
+  margin-right: 16px
+}
+
+.repair-card-desktop-container {
+  display: none
+}
+
+.repair-card {
+  position: relative;
+  height: 100%
+}
+
+.repair-card__title {
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.repair-card-btn--position {
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+
+.subtitle-repair--mg {
+  margin-bottom: 16px
+}
+
+.repair-card-desktop-container {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.repair-card-desktop-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-height: 160px;
+  overflow: hidden;
+  -webkit-transition: all .75s;
+  transition: all .75s
+}
+
+.repair-card-desktop-wrap--mg {
+  margin: 0 -6px 12px -6px
+}
+
+.repair-card-wrap--active {
+  max-height: 345px
+}
+
+.repair-card-desktop {
+  height: 160px
+}
+
+.repair-card-desktop--mg {
+  margin: 0 12px 12px 12px
+}
+
+.repair-card-hidden768,.repair-card-hidden1440 {
+  opacity: 0;
+  visibility: hidden
+}
+
+.repair-card-hidden1440 {
+  display: none
 }
 .price_title{
   margin-bottom: 16px;
@@ -1034,12 +1151,11 @@ margin-right: 5px;
 	}
   .control-wrap{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .veil {
 		display: none;
 	}
-
   .footer-container {
 		display: flex;
 		justify-content: space-between;
@@ -1088,10 +1204,10 @@ margin-right: 5px;
     overflow: hidden;
     -webkit-transition: all .75s;
     transition: all .75s
-}
-.brand-card-wrap--active {
+  }
+  .brand-card-wrap--active {
   max-height: 264px
-}
+  }
   .brand-card-desktop-wrap--mg {
     margin: 0 -6px 12px -6px;
   }
@@ -1121,6 +1237,55 @@ margin-right: 5px;
   .brand-card-hidden1440 {
     display: none;
   }
+  .repair-slider {
+    display: none
+}
+
+.repair-slider__slide {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 16px;
+    width: 240px;
+    height: 160px
+}
+
+.repair-card {
+    width: 224px;
+    height: 160px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 16px
+}
+
+.repair-card-btn--position {
+    bottom: 16px;
+    right: 16px
+}
+
+.repair {
+    padding-bottom: 31px
+}
+
+.subtitle-repair--mg {
+    margin-bottom: 24px
+}
+
+.repair-card-desktop-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.repair-card-desktop {
+    width: calc(33.074% - 30px)
+}
 
   .price-slider {
     display: none
@@ -1366,9 +1531,6 @@ margin-right: 5px;
 	.brand-card-hidden1440 {
 		display: block;
 	}
-  .control-wrap{
-    justify-content: flex-start;
-  }
   .price-desktop-title {
     grid-template-columns: 470px 227px 192px
 }
@@ -1376,6 +1538,25 @@ margin-right: 5px;
 .price-desktop-list {
     grid-template-columns: 470px 227px 192px 119px;
     padding: 0 24px
+}
+.repair {
+  padding-bottom: 49px
+}
+
+.repair-card {
+  width: 240px
+}
+
+.repair-card--mg {
+  margin-right: 32px
+}
+
+.repair-card-desktop {
+  width: calc((86.79% - 12px)/4)
+}
+
+.repair-card-hidden1440 {
+  display: block
 }
 
 }

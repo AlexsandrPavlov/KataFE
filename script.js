@@ -11,6 +11,7 @@ const body = document.querySelector('body');
 const veil = document.querySelector('.page-container__veil');
 const about_control = document.querySelector('.about__control');
 const brand_control = document.querySelector('.brand-control')
+const repairControl = document.querySelector('.repair-control')
 
 // блоки
 const dropdown =  document.querySelector('.dropdown-container');
@@ -24,6 +25,9 @@ const hiddenTextAbout = document.querySelector('.about-text-section__hidden')
 const arrowBrand = document.querySelector('.brand__control-icon')
 const brandText = document.querySelector ('.brand__control-name')
 const brandWrap = document.querySelector ('.brand-card-desktop-wrap')
+const repairWrap = document.querySelector ('.repair-card-desktop-wrap')
+const repairText = document.querySelector ('.repair__control-name')
+const repairArrow = document.querySelector ('.brand__control-icon')
 
 btn_burger.addEventListener('click', function(){
     dropdown.classList.add('dropdown-container__active')
@@ -92,6 +96,19 @@ brand_control.addEventListener('click', function(){
         arrowBrand.style.transform = 'rotate(0deg)';
         brandText.innerText = 'Показать все';
         brandWrap.classList.remove('brand-card-wrap--active');
+    }
+})
+repairControl.addEventListener('click', function(){
+    if (
+        !repairWrap.classList.contains('repair-card-wrap--active') 
+    ) {
+        repairWrap.classList.add('repair-card-wrap--active')
+        repairArrow.style.transform = 'rotate(180deg)';
+        repairText.innerText = 'Скрыть';
+    } else {
+        repairArrow.style.transform = 'rotate(0deg)';
+        repairText.innerText = 'Показать все';
+        repairWrap.classList.remove('repair-card-wrap--active');
     }
 })
 
