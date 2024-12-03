@@ -383,9 +383,8 @@
 						<div class="swiper-pagination"></div>
 					</div>
 					<div class="brand-card-desktop-container">
-						<!-- brandCardWrap--active -->
 						<div class="brand-card-desktop-wrap brand-card-desktop-wrap--mg">
-							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card ">
 								<img src="img/services/Bitmap.png" alt="Lenovo">
 								<a href='#0' class='brand-slider__link'></a>
 							</div>
@@ -426,12 +425,12 @@
 							<div class="brand-card-desktop brand-card-desktop--mg brand-card brand-card-hidden1440"></div>
 						</div>
 						<div class="control-wrap">
-							<div class='control brand__control'>
-								<div class="control-icon-wrap">
+							<button type="button" class='control brand-control'>
+								<div class="control-icon-wrap brand-img">
 									<span class='control-icon control-icon--mg brand__control-icon'></span>
 								</div>
 								<span class='control-name brand__control-name'>Показать все</span>
-							</div>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -444,9 +443,148 @@
 
 				<div class="price-container">
 					<h2 class="subtitle price_title"> цены на услуги</h2>
-
+					<div class="price-slider swiper-container">
+						<span class="veil-gradient veil-gradient__right veil-gradient__price-right--size"></span>
+						<span class="veil-gradient veil-gradient__left veil-gradient__price-left--size"></span>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="price-slider__slide price-slider__slide--mg">
+									<div class="price-slider__wrap">
+										<h3 class="price-slider__title price-slider__title--mg">Ремонтные услуги</h3>
+										<p class="price-slider__text price-slider__text--mg">Тестирование с выдачей технического заключения</p>
+										<h3 class="price-slider__title price-slider__title--mg">Цена</h3>
+										<p class="price-slider__text price-slider__text--mg">Бесплатно</p>
+										<h3 class="price-slider__title price-slider__title--mg">Срок</h3>
+										<p class="price-slider__text">30-120 мин</p>
+										<a href="#order" class="btn-order btn-order--position">Заказать ></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-slider__slide price-slider__slide--mg">
+									<div class="price-slider__wrap">
+										<h3 class="price-slider__title price-slider__title--mg">Ремонтные услуги</h3>
+										<p class="price-slider__text price-slider__text--mg">Диагностика</p>
+										<h3 class="price-slider__title price-slider__title--mg">Цена</h3>
+										<p class="price-slider__text price-slider__text--mg">Бесплатно</p>
+										<h3 class="price-slider__title price-slider__title--mg">Срок</h3>
+										<p class="price-slider__text">30 мин</p>
+										<a href="#order" class="btn-order btn-order--position">Заказать ></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-slider__slide price-slider__slide--mg">
+									<div class="price-slider__wrap">
+										<h3 class="price-slider__title price-slider__title--mg">Ремонтные услуги</h3>
+										<p class="price-slider__text price-slider__text--mg">Замена дисплея</p>
+										<h3 class="price-slider__title price-slider__title--mg">Цена</h3>
+										<p class="price-slider__text price-slider__text--mg">1000 ₽</p>
+										<h3 class="price-slider__title price-slider__title--mg">Срок</h3>
+										<p class="price-slider__text">30-120 мин</p>
+										<a href="#order" class="btn-order btn-order--position">Заказать ></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-slider__slide price-slider__slide--mg">
+									<div class="price-slider__wrap">
+										<h3 class="price-slider__title price-slider__title--mg">Ремонтные услуги</h3>
+										<p class="price-slider__text price-slider__text--mg">Замена полифонического динамика</p>
+										<h3 class="price-slider__title price-slider__title--mg">Цена</h3>
+										<p class="price-slider__text price-slider__text--mg">1000 ₽</p>
+										<h3 class="price-slider__title price-slider__title--mg">Срок</h3>
+										<p class="price-slider__text">30-120 мин</p>
+										<a href="#order" class="btn-order btn-order--position">Заказать ></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="price-slider__slide price-slider__slide--mg">
+									<div class="price-slider__wrap">
+										<h3 class="price-slider__title price-slider__title--mg">Ремонтные услуги</h3>
+										<p class="price-slider__text price-slider__text--mg">Замена программного обеспечения</p>
+										<h3 class="price-slider__title price-slider__title--mg">Цена</h3>
+										<p class="price-slider__text price-slider__text--mg">1000 ₽</p>
+										<h3 class="price-slider__title price-slider__title--mg">Срок</h3>
+										<p class="price-slider__text">30-120 мин</p>
+										<a href="#order" class="btn-order btn-order--position">Заказать ></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="price-desktop-wrap price-desktop-wrap--mg container">
+						<ul class="price-desktop-title price-desktop-title--mg">
+							<li class="price-desktop-title__text">Ремонтные услуги</li>
+							<li class="price-desktop-title__text">Цена</li>
+							<li class="price-desktop-title__text">Срок</li>
+						</ul>
+						<ul class="price-desktop-list">
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">Диагностика</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">Бесплатно</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">30 мин</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<a href="#order" class="btn-order">Заказать ></a>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">Замена дисплея</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">1 000 ₽</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">30-120 мин</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<a href="#order" class="btn-order">Заказать ></a>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">Замена полифонического динамика</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">1 000 ₽</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">30-120 мин</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<a href="#order" class="btn-order">Заказать ></a>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">Тестирование с выдачей технического заключения</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">1 000 ₽</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<p class="price-desktop-list__item-text">30-120 мин</p>
+							</li>
+							<li class="price-desktop-list__wrap">
+								<a href="#order" class="btn-order">Заказать ></a>
+							</li>
+							<li class="price-desktop-list__wrap price-desktop-list__wrap--no-border">
+								<p class="price-desktop-list__item-text">Замена программного обеспечения</p>
+							</li>
+							<li class="price-desktop-list__wrap price-desktop-list__wrap--no-border">
+								<p class="price-desktop-list__item-text">1 000 ₽</p>
+							</li>
+							<li class="price-desktop-list__wrap price-desktop-list__wrap--no-border">
+								<p class="price-desktop-list__item-text">30-120 мин</p>
+							</li>
+							<li class="price-desktop-list__wrap price-desktop-list__wrap--no-border">
+								<a href="#order" class="btn-order">Заказать ></a>
+							</li>
+						</ul>
+					</div>
 				</div>
-
 				<div class='conditions'>
 
 					<p class='conditions-text'>
@@ -460,8 +598,7 @@
 					</a>
 
 				</div>
-
-				 <footer class="footer-container">
+				<footer class="footer-container">
 					<div class='footer-company-info'>
 						<p class='footer-company-info__year'>© 2019 CPS</p>
 						<p class='footer-company-info__text '>
@@ -473,6 +610,9 @@
 						Информация, размещенная на данной странице, не является публичной офертой
 					</p>
 				</footer> 
+				</div>
+
+		
 
 			</main>
 

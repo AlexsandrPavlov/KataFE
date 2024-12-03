@@ -10,6 +10,7 @@ const btn_message_dd = document.querySelector( '.dropdown-footer-button__chat');
 const body = document.querySelector('body');
 const veil = document.querySelector('.page-container__veil');
 const about_control = document.querySelector('.about__control');
+const brand_control = document.querySelector('.brand-control')
 
 // блоки
 const dropdown =  document.querySelector('.dropdown-container');
@@ -20,6 +21,9 @@ const btnMoreInfoAbout = document.querySelector('.about__control');
 const moreInfoTextAbout = document.querySelector('.about__control-name');
 const arrowAbout = document.querySelector('.about__control-icon');
 const hiddenTextAbout = document.querySelector('.about-text-section__hidden')
+const arrowBrand = document.querySelector('.brand__control-icon')
+const brandText = document.querySelector ('.brand__control-name')
+const brandWrap = document.querySelector ('.brand-card-desktop-wrap')
 
 btn_burger.addEventListener('click', function(){
     dropdown.classList.add('dropdown-container__active')
@@ -77,6 +81,20 @@ about_control.addEventListener('click', function(){
         hiddenTextAbout.classList.remove('about-text-section__hidden--active')
     }
 })
+brand_control.addEventListener('click', function(){
+    if (
+        !brandWrap.classList.contains('brand-card-wrap--active') 
+    ) {
+        brandWrap.classList.add('brand-card-wrap--active')
+        arrowBrand.style.transform = 'rotate(180deg)';
+        brandText.innerText = 'Скрыть';
+    } else {
+        arrowBrand.style.transform = 'rotate(0deg)';
+        brandText.innerText = 'Показать все';
+        brandWrap.classList.remove('brand-card-wrap--active');
+    }
+})
+
  window.addEventListener('DOMContentLoaded', function(){
     if (window.innerWidth < 768) {
         new Swiper(document.querySelector('.brand-slider'), {
