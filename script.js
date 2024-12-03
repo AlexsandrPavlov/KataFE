@@ -7,13 +7,19 @@ const btn_call_close = document.querySelector('.modal-call__btn-close');
 const btn_message_close = document.querySelector('.modal-message__btn-close');
 const btn_call_dd = document.querySelector( '.dropdown-footer-button__call');
 const btn_message_dd = document.querySelector( '.dropdown-footer-button__chat');
-const body = document.querySelector('body')
-const veil = document.querySelector('.page-container__veil')
+const body = document.querySelector('body');
+const veil = document.querySelector('.page-container__veil');
+const about_control = document.querySelector('.about__control');
 
 // блоки
 const dropdown =  document.querySelector('.dropdown-container');
 const modal_call = document.querySelector('.modal-call');
 const modal_message = document.querySelector('.modal-message')
+const hiddenText = document.querySelector('.about-text-section')
+const btnMoreInfoAbout = document.querySelector('.about__control');
+const moreInfoTextAbout = document.querySelector('.about__control-name');
+const arrowAbout = document.querySelector('.about__control-icon');
+const hiddenTextAbout = document.querySelector('.about-text-section__hidden')
 
 btn_burger.addEventListener('click', function(){
     dropdown.classList.add('dropdown-container__active')
@@ -50,9 +56,72 @@ btn_message_close.addEventListener('click', function(){
     modal_message.classList.remove('modal-message__active')
     veil.classList.remove('page-container__veil--active')
 })
- veil.addEventListener('click' , function(){
+veil.addEventListener('click' , function(){
     dropdown.classList.remove('dropdown-container__active')
     modal_call.classList.remove('modal-call__active')
     modal_message.classList.remove('modal-message__active')
     veil.classList.remove('page-container__veil--active')
+})
+about_control.addEventListener('click', function(){
+    if (
+        !hiddenText.classList.contains('about-text-section--active') 
+    ) {
+        hiddenText.classList.add('about-text-section--active');
+        hiddenTextAbout.classList.add('about-text-section__hidden--active')
+        arrowAbout.style.transform = 'rotate(180deg)';
+        moreInfoTextAbout.innerText = 'Скрыть';
+    } else {
+        arrowAbout.style.transform = 'rotate(0deg)';
+        moreInfoTextAbout.innerText = 'Читать далее';
+        hiddenText.classList.remove('about-text-section--active');
+        hiddenTextAbout.classList.remove('about-text-section__hidden--active')
+    }
+})
+ window.addEventListener('DOMContentLoaded', function(){
+    if (window.innerWidth < 768) {
+        new Swiper(document.querySelector('.brand-slider'), {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            initialSlide: 0,
+            slidesPerView: 1.2,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                stopOnLastSlide: true,
+                disableOnInteraction: false
+            }
+        });
+    
+        new Swiper('.repair-slider', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            initialSlide: 0,
+            slidesPerView: 1.16,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: true,
+                disableOnInteraction: false
+            }
+        });
+    
+        new Swiper('.price-slider', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            initialSlide: 0,
+            slidesPerView: 1.16,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                stopOnLastSlide: true,
+                disableOnInteraction: false
+            }
+        });
+    }
  })

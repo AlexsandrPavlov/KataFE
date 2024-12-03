@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>CPS сервис</title>
 </head>
 
@@ -306,18 +307,15 @@
 
 					<div class="section-info-container">
 
-						
-							<p class="section-info"> 
-								Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    			отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    			<br><br>
-                    			Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                    			количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    			очередь, советуют нас родным и близким.
-							</p>
-
-						<button class="section-button section-button__icon" type="button" >
-							<img src="icons/expand.svg" alt="" > <span class="section-next">Читать далее</span>
+						<div class="about-text-section">
+							<p class="about-text-section__visible about-text-section__visible--mg">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+							<p class="about-text-section__hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+						</div>
+						<button type="button" class='control about__control'>
+							<div class="control-icon-wrap">
+								<span class='control-icon control-icon--mg about__control-icon'></span>
+							</div>
+							<span class='control-name about__control-name'>Читать далее</span>
 						</button>
 
 					</div>
@@ -330,9 +328,114 @@
 			  	</div>
 				<div class="services-brand-container">
 					<h2 class="subtitle services_brand_title">Ремонт техники различных брендов</h2>
-					
-
+					<span class='veil veil__services--height'></span>
+					<div class="brand-slider brand-slider--mg swiper-container">
+						<div class="  swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/acer.png" alt="Acer">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/sansung.png" alt="Samsung">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/apple.png" alt="Apple">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/Bitmap.png" alt="Lenovo">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/bosh.png" alt="Bosch">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/hp.png" alt="Hp">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/acer.png" alt="Acer">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="brand-slider__slide brand-slider__slide--mg">
+									<img src="img/services/acer.png" alt="Acer">
+									<a href='#0' class='brand-slider__link'></a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="brand-card-desktop-container">
+						<!-- brandCardWrap--active -->
+						<div class="brand-card-desktop-wrap brand-card-desktop-wrap--mg">
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/Bitmap.png" alt="Lenovo">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/sansung.png" alt="Samsung">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/apple.png" alt="Apple">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/bosh.png" alt="Bosch">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/bosh.png" alt="Bosch">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/hp.png" alt="Hp">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/acer.png" alt="Acer">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/apple.png" alt="Apple">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card">
+								<img src="img/services/acer.png" alt="Acer">
+								<a href='#0' class='brand-slider__link'></a>
+							</div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card brand-card-hidden1440"></div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card brand-card-hidden1440"></div>
+							<div class="brand-card-desktop brand-card-desktop--mg brand-card brand-card-hidden1440"></div>
+						</div>
+						<div class="control-wrap">
+							<div class='control brand__control'>
+								<div class="control-icon-wrap">
+									<span class='control-icon control-icon--mg brand__control-icon'></span>
+								</div>
+								<span class='control-name brand__control-name'>Показать все</span>
+							</div>
+						</div>
+					</div>
 				</div>
+
 
 				<div class="repair-container">
 					<h2 class="subtitle repair_title"> ремонт различных видов техники</h2>
@@ -376,6 +479,7 @@
 
 	</div>
 	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  </body>
 
 </html>
