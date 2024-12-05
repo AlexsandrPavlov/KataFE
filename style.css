@@ -911,6 +911,9 @@ margin-right: 5px;
 .repair-card-hidden1440 {
   display: none
 }
+.repair-control{
+  display: none;
+}
 .price_title{
   margin-bottom: 16px;
 }
@@ -1240,6 +1243,9 @@ margin-right: 5px;
   .price-slider {
     display: none
   
+}
+.repair-control{
+  display: flex;
 }
 
 .price-desktop-wrap {
