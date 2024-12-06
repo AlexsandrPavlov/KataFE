@@ -341,8 +341,6 @@ margin-bottom: 20px;
   background-color: #ff3e79;
   letter-spacing: -0.15px;
   border-radius: 16px;
-  -webkit-filter: drop-shadow(1px 1px 1.5px #000000);
-  filter: drop-shadow(1px 1px 1.5px #000000);
   transition: all .4s
 }
 .btn-order--position {
@@ -557,6 +555,7 @@ margin-bottom: 20px;
 .modal-message__active {
   transform: translate(0);
   visibility: visible;
+
 
 }
 .modal-call__btn-close,
