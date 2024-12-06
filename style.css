@@ -555,8 +555,6 @@ margin-bottom: 20px;
 .modal-message__active {
   transform: translate(0);
   visibility: visible;
-
-
 }
 .modal-call__btn-close,
 .modal-message__btn-close {
@@ -1345,6 +1343,7 @@ margin-bottom: 20px;
     z-index: 0;
   }
   .dropdown-container__wrap{
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
   }
