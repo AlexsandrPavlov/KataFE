@@ -28,47 +28,95 @@ const brandWrap = document.querySelector ('.brand-card-desktop-wrap')
 const repairWrap = document.querySelector ('.repair-card-desktop-wrap')
 const repairText = document.querySelector ('.repair__control-name')
 const repairArrow = document.querySelector ('.brand__control-icon')
+const bodyMain = document.querySelector ('body')
 
 btn_burger.addEventListener('click', function(){
     dropdown.classList.add('dropdown-container__active')
     veil.classList.add('page-container__veil--active')
+    bodyMain.classList.add('overflow-block')
+    
 })
 btn_burger_close.addEventListener('click', function(){
     dropdown.classList.remove('dropdown-container__active')
     veil.classList.remove('page-container__veil--active')
+    bodyMain.classList.remove('overflow-block')
 })
 btn_call.addEventListener('click', function(){
-    modal_call.classList.add('modal-call__active')
-    veil.classList.add('page-container__veil--active')
+    if(
+        !modal_call.classList.contains('modal-call__active') 
+    ) {
+        modal_call.classList.add('modal-call__active')
+        veil.classList.add('page-container__veil--active')
+        bodyMain.classList.add('overflow-block')
+        modal_message.classList.remove('modal-message__active')
+    }else{
+        modal_call.classList.remove('modal-call__active')
+        veil.classList.remove('page-container__veil--active')
+        bodyMain.classList.remove('overflow-block')
+    }
+    
 })
 btn_call_dd.addEventListener('click', function(){
-    modal_call.classList.add('modal-call__active')
-    veil.classList.add('page-container__veil--active')
-
+    if(
+        !modal_call.classList.contains('modal-call__active') 
+    ) {
+        modal_call.classList.add('modal-call__active')
+        veil.classList.add('page-container__veil--active')
+        bodyMain.classList.add('overflow-block')
+        modal_message.classList.remove('modal-message__active')
+    }else{
+        modal_call.classList.remove('modal-call__active')
+        veil.classList.remove('page-container__veil--active')
+        bodyMain.classList.remove('overflow-block')
+    }
+    
 })
 btn_call_close.addEventListener('click', function(){
     modal_call.classList.remove('modal-call__active')
     veil.classList.remove('page-container__veil--active')
+    bodyMain.classList.remove('overflow-block')
 
 })
 btn_message.addEventListener('click', function(){
-    modal_message.classList.add('modal-message__active')
-    veil.classList.add('page-container__veil--active')
+    if(
+        !modal_message.classList.contains('modal-message__active') 
+    ) {
+        modal_message.classList.add('modal-message__active')
+        veil.classList.add('page-container__veil--active')
+        bodyMain.classList.add('overflow-block')
+        modal_call.classList.remove('modal-call__active')
+    }else{
+        modal_message.classList.remove('modal-message__active')
+        veil.classList.remove('page-container__veil--active')
+        bodyMain.classList.remove('overflow-block')
+    }
 })
 btn_message_dd.addEventListener('click', function(){
-    modal_message.classList.add('modal-message__active')
-    veil.classList.add('page-container__veil--active')
+    if(
+        !modal_message.classList.contains('modal-message__active') 
+    ) {
+        modal_message.classList.add('modal-message__active')
+        veil.classList.add('page-container__veil--active')
+        bodyMain.classList.add('overflow-block')
+        modal_call.classList.remove('modal-call__active')
+    }else{
+        modal_message.classList.remove('modal-message__active')
+        veil.classList.remove('page-container__veil--active')
+        bodyMain.classList.remove('overflow-block')
+    }
 
 })
 btn_message_close.addEventListener('click', function(){
     modal_message.classList.remove('modal-message__active')
     veil.classList.remove('page-container__veil--active')
+    bodyMain.classList.remove('overflow-block')
 })
 veil.addEventListener('click' , function(){
     dropdown.classList.remove('dropdown-container__active')
     modal_call.classList.remove('modal-call__active')
     modal_message.classList.remove('modal-message__active')
     veil.classList.remove('page-container__veil--active')
+    bodyMain.classList.remove('overflow-block')
 })
 about_control.addEventListener('click', function(){
     if (
