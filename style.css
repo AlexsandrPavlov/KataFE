@@ -24,7 +24,7 @@ img {
 	vertical-align: top;
 }
 button{
-  transition: all 0.7s;
+  transition: all 0.4s;
 }
 h1,
 h2,
@@ -545,11 +545,11 @@ margin-bottom: 20px;
 	min-height: 676px;
 	background-color: #ffffff;
   padding: 24px 16px 75px 16px;
-  transform: translate(500px);
+  transform: translate(900px);
   visibility: hidden;
   border-left: 1px solid #d9fff5;
 	box-shadow: -8px 7px 8px 0px rgba(34, 60, 80, 0.2);
-  transition: all 0.6s;
+  transition: all 0.9s;
 }
 .modal-call__active,
 .modal-message__active {
@@ -568,6 +568,7 @@ margin-bottom: 20px;
   border: none;
   cursor: pointer;
   background-color: #ff3e79;
+  
 }
 .modal-call__btn-close:hover,
 .modal-message__btn-close:hover {

@@ -16,7 +16,7 @@ const repairControl = document.querySelector('.repair-control')
 // блоки
 const dropdown =  document.querySelector('.dropdown-container');
 const modal_call = document.querySelector('.modal-call');
-const modal_message = document.querySelector('.modal-message')
+const modal_message = document.querySelector('.modal-message');
 const hiddenText = document.querySelector('.about-text-section')
 const btnMoreInfoAbout = document.querySelector('.about__control');
 const moreInfoTextAbout = document.querySelector('.about__control-name');
@@ -64,6 +64,7 @@ btn_call_dd.addEventListener('click', function(){
         veil.classList.add('page-container__veil--active')
         bodyMain.classList.add('overflow-block')
         modal_message.classList.remove('modal-message__active')
+        var pageUp = document.querySelector('.page-container').scrollIntoView()
     }else{
         modal_call.classList.remove('modal-call__active')
         veil.classList.remove('page-container__veil--active')
@@ -99,6 +100,7 @@ btn_message_dd.addEventListener('click', function(){
         veil.classList.add('page-container__veil--active')
         bodyMain.classList.add('overflow-block')
         modal_call.classList.remove('modal-call__active')
+        var pageUp = document.querySelector('.page-container').scrollIntoView()
     }else{
         modal_message.classList.remove('modal-message__active')
         veil.classList.remove('page-container__veil--active')
